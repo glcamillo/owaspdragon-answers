@@ -1,0 +1,398 @@
+{
+  "summary": {
+    "title": "Teste que testa coisas"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "seila",
+        "$$hashKey": "object:22"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "Zoom STRIDE Diagram",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0,
+        "$$hashKey": "object:20",
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 327,
+                "y": 221
+              },
+              "angle": 0,
+              "id": "bb8c1485-9a79-4f7e-9a4a-c96de9ace5fb",
+              "z": 1,
+              "hasOpenThreats": false,
+              "description": "Reunião Criada",
+              "outOfScope": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "title": "Divulgação das informações da reunião",
+                  "mitigation": "Uso de metodos criptograficos para a cifragem;\nMecanismos de autorização dos sistemas operacionais.",
+                  "description": "A capacidade de poder ver e ouvir a reuniao atraves das chaves criptograficas simples como no caso o AES-128 que é igual para todos os usuarios presentes na reunião.",
+                  "$$hashKey": "object:357"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Meeting Zoom"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 2,
+                "y": 232
+              },
+              "angle": 0,
+              "id": "c16e3c31-25bf-4e7c-9a4e-d179710fc9a4",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Salomon"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 577,
+                "y": 233
+              },
+              "angle": 0,
+              "id": "f09f907a-2c77-45de-83b1-6035b119a891",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Camila"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 1,
+                "y": 369
+              },
+              "angle": 0,
+              "id": "494146da-462d-4279-9d56-1124aa6fc466",
+              "z": 4,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "João"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "c16e3c31-25bf-4e7c-9a4e-d179710fc9a4"
+              },
+              "target": {
+                "id": "bb8c1485-9a79-4f7e-9a4a-c96de9ace5fb"
+              },
+              "vertices": [
+                {
+                  "x": 277,
+                  "y": 273
+                }
+              ],
+              "id": "89526cdb-9b10-4d58-9947-6e0fd6a7aac5",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Audio & Video",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 6,
+              "hasOpenThreats": false,
+              "description": "Envio de audio e video para a chamada e recebimento dos mesmos",
+              "protocol": "UDP",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "494146da-462d-4279-9d56-1124aa6fc466"
+              },
+              "target": {
+                "id": "bb8c1485-9a79-4f7e-9a4a-c96de9ace5fb"
+              },
+              "vertices": [],
+              "id": "51af88e9-33e6-420e-a5da-983de68d939b",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Audio & Video",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 8,
+              "hasOpenThreats": false,
+              "description": "Transmitindo e recebendo video e audio",
+              "outOfScope": false,
+              "protocol": "UDP",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 299,
+                "y": 36
+              },
+              "angle": 0,
+              "id": "9084108c-3233-45a0-88ab-d3acfa2e96a8",
+              "z": 10,
+              "hasOpenThreats": false,
+              "description": "",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Pessoa/Criminoso"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "9084108c-3233-45a0-88ab-d3acfa2e96a8"
+              },
+              "target": {
+                "id": "bb8c1485-9a79-4f7e-9a4a-c96de9ace5fb"
+              },
+              "vertices": [],
+              "id": "774fb919-8ff8-4588-a72e-a03d2d10de59",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Em espera",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 11,
+              "hasOpenThreats": true,
+              "description": "Local aonde é possivel ocorrer os problemas relacionados a sala de espera",
+              "protocol": "UDP",
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "title": "Acesso sem permissão",
+                  "$$hashKey": "object:339"
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "title": "Modificação de codigo para ataques",
+                  "mitigation": "Mecanismos de autorização dos SO: permissões/ACLs\n(lista de controle de acesso)/MAC:\nAssinaturas digitais\nHashing e Hashing Criptográfico",
+                  "$$hashKey": "object:435"
+                }
+              ],
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "f09f907a-2c77-45de-83b1-6035b119a891"
+              },
+              "target": {
+                "id": "bb8c1485-9a79-4f7e-9a4a-c96de9ace5fb"
+              },
+              "vertices": [],
+              "id": "8f7c4385-908d-4d8b-983a-44b07219ce04",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Audio & Video",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 12,
+              "hasOpenThreats": false,
+              "description": "Envia e recebe audio e video",
+              "protocol": "UDP",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 559,
+                "y": 123
+              },
+              "target": {
+                "x": 179,
+                "y": 122
+              },
+              "vertices": [
+                {
+                  "x": 482,
+                  "y": 497
+                },
+                {
+                  "x": 222,
+                  "y": 472
+                }
+              ],
+              "id": "24e79c06-5402-4f6c-b89d-1962b228a26f",
+              "z": 13,
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Ataque de repudio",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "attrs": {}
+            }
+          ]
+        },
+        "size": {
+          "height": "590",
+          "width": 1790
+        }
+      }
+    ]
+  }
+}
